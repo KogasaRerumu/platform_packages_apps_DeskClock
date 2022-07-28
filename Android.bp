@@ -1,0 +1,15 @@
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app_import {
+	name: "GoogleDeskClock",
+	apk: "prebuilt/DeskClock.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+	overrides: ["DeskClock"],
+}
